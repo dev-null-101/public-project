@@ -1,36 +1,36 @@
----
-    name: On Pull Request
+# ---
+#     name: On Pull Request
 
-    on:
-        push:
-            branches:
-                - development
-            paths:
-                - 'create_project_terraform_dir_structure.py'
-        pull_request:
-            branches:
-                - development
-            paths:
-                - 'create_project_terraform_dir_structure.py'
+#     on:
+#         push:
+#             branches:
+#                 - development
+#             paths:
+#                 - 'create_project_terraform_dir_structure.py'
+#         pull_request:
+#             branches:
+#                 - development
+#             paths:
+#                 - 'create_project_terraform_dir_structure.py'
 
-    jobs:
-        lint:
-            name: Lint
-            runs-on: ubunut-latest
+#     jobs:
+#         lint:
+#             name: Lint
+#             runs-on: ubunut-latest
 
-            steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
+#             steps:
+#             - name: Checkout code
+#               uses: actions/checkout@v2
             
-            - name: Set up Python
-              uses: actions/setup-python@v2
-              with:
-                python-version: '3.x'
+#             - name: Set up Python
+#               uses: actions/setup-python@v2
+#               with:
+#                 python-version: '3.x'
 
-            - name: Install dependencies
-              run: |
-                pip install flake8
+#             - name: Install dependencies
+#               run: |
+#                 pip install flake8
 
-            - name: Run Flake8
-              run: |
-                flake8 .
+#             - name: Run Flake8
+#               run: |
+#                 flake8 .

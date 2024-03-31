@@ -1,5 +1,5 @@
 ---
-    name: On Pull Request
+    name: On Commit
 
     on:
         push:
