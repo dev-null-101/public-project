@@ -18,12 +18,12 @@ def create_directory_structure():
 
     # Add some files to the main directory
     file_names = [
-        "provider.tf", 
-        "version.tf", 
-        "backend.tf", 
-        "main.tf", 
-        "variables.tf", 
-        "terraform.tfvars", 
+        "provider.tf",
+        "version.tf",
+        "backend.tf",
+        "main.tf",
+        "variables.tf",
+        "terraform.tfvars",
         "output.tf"
     ]
 
