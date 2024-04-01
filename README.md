@@ -11,5 +11,9 @@ git clone -b master git@github.com:user/repository.git --single-branch --depth 1
 
 #### Reference: 
 ```
+README:
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+GHA SYNTAX:
+https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 ```
