@@ -16,7 +16,7 @@
     jobs:
         lint:
             name: Lint
-            runs-on: ubunut-latest
+            runs-on: ubuntu-latest
 
             steps:
             - name: Checkout code
