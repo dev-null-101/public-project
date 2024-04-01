@@ -86,5 +86,6 @@ def create_directory_structure():
     print("Directory structure created successfully!")
     # print(dir_list_after)
 
+
 if __name__ == "__main__":
     create_directory_structure()
