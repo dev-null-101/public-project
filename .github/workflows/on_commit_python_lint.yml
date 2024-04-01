@@ -1,0 +1,34 @@
+---
+    name: On Commit
+
+    on:
+        push:
+            branches:
+                - development
+            paths:
+                - 'create_project_terraform_dir_structure.py'
+              
+        # allows you to run this workflow manually from the action tab
+        workflow_dispatch:
+
+    jobs:
+        lint:
+            name: Lint
+            runs-on: ubuntu-latest
+
+            steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+            
+            - name: Set up Python
+              uses: actions/setup-python@v2
+              with:
+                python-version: '3.x'
+
+            - name: Install dependencies
+              run: |
+                pip install flake8
+
+            - name: Run Flake8
+              run: |
+                flake8 .

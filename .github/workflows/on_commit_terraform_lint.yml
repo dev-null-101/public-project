@@ -1,17 +1,14 @@
 ---
-    name: On Commit
+    name: On Commit Terraform code
 
     on:
         push:
             branches:
                 - development
             paths:
-                - 'create_project_terraform_dir_structure.py'
-        pull_request:
-            branches:
-                - development
-            paths:
-                - 'create_project_terraform_dir_structure.py'
+                - '**.tf'
+        
+        workflow_dispatch:
 
     jobs:
         lint:
