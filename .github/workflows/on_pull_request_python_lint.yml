@@ -1,5 +1,5 @@
 ---
-    name: On Pull Request
+    name: On Pull Request Python
 
     on:
         push:
