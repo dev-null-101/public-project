@@ -1,2 +1,2 @@
-Service Principal Naming convention
+# Service Principal Naming convention
 <service>-sp-<environment>
