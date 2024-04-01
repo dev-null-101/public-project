@@ -1,2 +1,5 @@
-# Service Principal Naming convention
+README
+======
+
+Service Principal Naming convention
 <service>-sp-<environment>
