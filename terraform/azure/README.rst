@@ -1,7 +1,7 @@
 README
 ======
 
-Service Principal Naming convention
+Service Principal
 -----------------------------------
 | <service>-sp-<environment>
 | az ad sp create-for-rbac --name <your-service-principal-name>
