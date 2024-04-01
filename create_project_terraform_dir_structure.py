@@ -1,6 +1,6 @@
 #!/bin/env /bin/python3
 """Module creating project for terraform directory structure.
-   Best directory structure based on Hashicorp."""
+   Best directory structure based on Hashicorp. """
 
 import os
 
