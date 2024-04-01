@@ -56,11 +56,11 @@ def create_directory_structure():
     # create sample tf files and directories under sample directory
     sample_subdirectory_path = os.path.join(main_directory, "network_sample")
     sample_file_names = [
-        "provider.tf", 
-        "vpc.tf", 
-        "loadbalancer.tf", 
-        "variables.tf", 
-        "variables-local.tf",  
+        "provider.tf",
+        "vpc.tf",
+        "loadbalancer.tf",
+        "variables.tf",
+        "variables-local.tf", 
         "output.tf",
         "README.md"
     ]
