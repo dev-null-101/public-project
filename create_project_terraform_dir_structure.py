@@ -8,6 +8,7 @@ project_name = input("Project name: ")
 # get the script name
 script_name = os.path.splitext(os.path.basename(__file__))[0]
 
+
 def create_directory_structure():
     """Specify the main directory name"""
     main_directory = project_name
