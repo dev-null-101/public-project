@@ -1,7 +1,7 @@
 # README
 #### Project Date Started: 04/01/2024
 #### Note: This project focuses on DevOps Engineer, Cloud Engineer and Security Devops Engineer Roles
-* This project will include security, automation and cicd.
+* This project will include security, automation and CICD.
 * Public Cloud Providers:  Azure, GCP, AWS, Linode ...
 * Ansible, Terraform, Python, API, Bash, Powershell, Web Services...  
 
