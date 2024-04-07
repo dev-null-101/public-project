@@ -49,10 +49,10 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
       node_count = 1
       min_count = 1
       max_count = 10
-    }
 
-    node_labels = {
+      node_labels = {
         role = "general"
+      }
     }
 
     identity {
