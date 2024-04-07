@@ -7,7 +7,7 @@ resource "azurerm_user_assigned_identity" "aks_msi" {
 resource "azurerm_role_assignment" "aks_role" {
     scope                = azurerm_resource_group.aks_rg.id
     role_definition_name = "Network Contributor"
-    principal_id         = azurerm_user_assigned_identity.msi_aks.principal_id
+    principal_id         = azurerm_user_assigned_identity.aks_msi.principal_id
 }
 
 resource "azurerm_kubernetes_cluster" "aks_cluster" {
