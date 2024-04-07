@@ -33,6 +33,4 @@
               - name: Terraform Lint
                 run: tflint
               
-              - name: Terraform Plan
-                run: terraform plan
 
