@@ -63,4 +63,12 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
     tags = {
       env = local.env
     }
+
+    lifecycle {
+      ignore_changes = [default_node_pool[0].node_count]
+    }
+
+    depends_on = [
+      azurerm_role_assignment.aks_role
+    ]
 }
