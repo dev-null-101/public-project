@@ -1,5 +1,9 @@
 # README
 #### Project Date Started: 04/01/2024
+#### Note: This project focuses on DevOps Engineer, Cloud Engineer and Cyber Security Engineer Roles
+```
+* This project will be design with security and automation is priority
+```
 
 
 #### git ssh config in jumpvm:
