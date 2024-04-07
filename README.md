@@ -1,9 +1,7 @@
 # README
 #### Project Date Started: 04/01/2024
 #### Note: This project focuses on DevOps Engineer, Cloud Engineer and Security Devops Engineer Roles
-```
-* This project will be design with security, automation and cicd is priority
-```
+* This project will include security, automation and cicd.
 
 #### git ssh config in jumpvm:
 ```
