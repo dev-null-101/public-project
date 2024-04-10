@@ -19,6 +19,6 @@ Workflows:
 
 Commands:
 ---------
-| az aks get-credentials --resource-group <rg> --name <aksname>
-| kubectl get nodes
-| kubectl get svc
+* az aks get-credentials --resource-group <rg> --name <aksname>
+* kubectl get nodes
+* kubectl get svc
