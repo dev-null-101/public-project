@@ -5,6 +5,9 @@
 #   client_secret   = var.secret
 #   tenant_id       = var.tenantid
 # }
+module "azurerm" {
+  source = "./modules/azure_provider"
+}
 
 resource "azurerm_resource_group" "example" {
   name     = "example-resources"
