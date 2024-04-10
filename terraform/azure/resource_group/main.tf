@@ -5,7 +5,7 @@
 #   client_secret   = var.secret
 #   tenant_id       = var.tenantid
 # }
-module "azurerm" {
+module "azure_provider" {
   source = "./modules/azure_provider"
 }
 
