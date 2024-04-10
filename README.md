@@ -5,6 +5,7 @@
 * Public Cloud Providers:  Azure, GCP, AWS, Linode ...
 * Ansible, Terraform, Python, API, Bash, Powershell, Web Services...
 * Clouds Services: Kubernetes, GKE, Network, DNS etc.
+* Pipeline: Github Action, Azure DevOps
 
 #### git ssh config in jumpvm:
 ```
