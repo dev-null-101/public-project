@@ -1,0 +1,16 @@
+---
+# exposing same application for internal consumption
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-v1-private
+  annotations:
+    # set special annotation to make it private
+    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+spec:
+  type: LoadBalancer
+  selector:
+    app: nginx-v1
+  ports:
+    - port: 80
+      targetPort: http

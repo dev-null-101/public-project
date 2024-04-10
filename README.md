@@ -3,7 +3,8 @@
 #### Note: This project focuses on DevOps Engineer, Cloud Engineer and Devops Security Engineer Roles
 * This project will include security, automation and CICD.
 * Public Cloud Providers:  Azure, GCP, AWS, Linode ...
-* Ansible, Terraform, Python, API, Bash, Powershell, Web Services...  
+* Ansible, Terraform, Python, API, Bash, Powershell, Web Services...
+* Clouds Services: Kubernetes, GKE, Network, DNS etc.
 
 #### git ssh config in jumpvm:
 ```
