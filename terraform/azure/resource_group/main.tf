@@ -6,7 +6,7 @@
 #   tenant_id       = var.tenantid
 # }
 module "azure_provider" {
-  source = "./modules/azure_provider"
+  source = "./modules/azure_provider/main.tf"
 }
 
 resource "azurerm_resource_group" "example" {
