@@ -2,15 +2,14 @@
 
     name: On Commit Continuous Integration
     
-    on:
-        on:
-            push:
-                branches:
-                    - development
-                paths:
-                    - '**.py'
-            
-            workflow_dispatch:
+on:
+    push:
+        branches:
+            - development
+        paths:
+            - '**.py'
+    
+    workflow_dispatch:
     
     jobs:
       container_build:
