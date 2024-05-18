@@ -29,17 +29,5 @@
               sudo apt-get install -y python3-pip git libkrb5-dev
               pip3 install --upgrade pip 
               pip3 install --upgrade pycodestyle
-              python3 -B -m pycodestyle --config=~/.config/pycodestyle tools/*.py
+              python3 -B -m pycodestyle --config=~/.config/pycodestyle ~/tools/create_project_terraform_dir_structure.py
 
-      # python_lint:
-      #   runs-on:
-      #     - ubuntu-latest
-      #   needs: container_build
-      #   steps:
-    
-      #     - name: Python Lint
-      #       run: >-
-      #         docker run
-      #         -v $(pwd):/work
-      #         -w /work
-      #         python_vm python3 -B -m pycodestyle --config=/work/.config/pycodestyle /work
