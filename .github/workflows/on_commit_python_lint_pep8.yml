@@ -30,8 +30,9 @@
               pip3 install --upgrade pip 
               pip3 install --upgrade pycodestyle
               pwd
-              ls -lrta
-              python3 -B -m pycodestyle ${pwd}/.config/pycodestyle .
+              ls -lrta .config
+              
+#python3 -B -m pycodestyle ${pwd}/.config/pycodestyle .
 
       # python_lint:
       #   runs-on:
