@@ -12,10 +12,9 @@
         workflow_dispatch:
     
     jobs:
-      container_build:
+      python_lint:
         runs-on:
           - ubuntu-latest
-        concurrency: "container_build"
         steps:
         
           - name: Github checkout
@@ -30,7 +29,10 @@
               sudo apt-get install -y python3-pip git libkrb5-dev
               pip3 install --upgrade pip 
               pip3 install --upgrade pycodestyle
-              python3 -B -m pycodestyle .config/pycodestyle .
+              pwd
+              ls -lrt
+              
+# python3 -B -m pycodestyle .config/pycodestyle .
 
       # python_lint:
       #   runs-on:
