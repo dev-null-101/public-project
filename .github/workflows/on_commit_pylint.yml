@@ -1,6 +1,6 @@
 ---
 
-    name: Pylint
+    name: On Commit Pylint
 
     on:
         push:
