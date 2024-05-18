@@ -21,19 +21,27 @@
           - name: Github checkout
             uses: actions/checkout@v4
     
-          - name: Build Docker image
-            run: docker build -t python_vm ./tests
-    
-      python_lint:
-        runs-on:
-          - ubuntu-latest
-        needs: container_build
-        steps:
-    
+          # - name: Build Docker image
+          #   run: docker build -t python_vm ./tests
+
           - name: Python Lint
-            run: >-
-              docker run
-              -v $(pwd):/work
-              -w /work
-              python_vm python3 -B -m pycodestyle --config=/work/.config/pycodestyle /work
+            run: |
+              apt-get update -y
+              apt-get install -y python3-pip git libkrb5-dev
+              pip3 install --upgrade pip 
+              pip3 install --upgrade pycodestyle
+              python3 -B -m pycodestyle .config/pycodestyle .
+
+      # python_lint:
+      #   runs-on:
+      #     - ubuntu-latest
+      #   needs: container_build
+      #   steps:
+    
+      #     - name: Python Lint
+      #       run: >-
+      #         docker run
+      #         -v $(pwd):/work
+      #         -w /work
+      #         python_vm python3 -B -m pycodestyle --config=/work/.config/pycodestyle /work
     
