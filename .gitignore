@@ -146,7 +146,7 @@ project-tf-input-generator/output/
 *.key
 *.pem
 *.env
-*.config
+# *.config
 
 # Ignore user-specific files
 *.log
