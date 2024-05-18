@@ -29,5 +29,5 @@
               sudo apt-get install -y python3-pip git libkrb5-dev
               pip3 install --upgrade pip 
               pip3 install --upgrade pycodestyle
-              python3 -B -m pycodestyle --config=~${work}.config/pycodestyle ${work}
+              python3 -B -m pycodestyle --config=~${work}.config/pycodestyle ${work}tools/python/test.py
 
