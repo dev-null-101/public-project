@@ -19,9 +19,6 @@
         
           - name: Github checkout
             uses: actions/checkout@v4
-    
-          # - name: Build Docker image
-          #   run: docker build -t python_vm ./tests
 
           - name: Python Lint
             run: |
