@@ -1,6 +1,6 @@
 ---
 
-    name: On Commit Continuous Integration
+    name: On Commit python pep8
     
     on:
         push:
