@@ -29,10 +29,7 @@
               sudo apt-get install -y python3-pip git libkrb5-dev
               pip3 install --upgrade pip 
               pip3 install --upgrade pycodestyle
-              pwd
-              ls -lrta $work
-              
-#python3 -B -m pycodestyle ${pwd}/.config/pycodestyle .
+              python3 -B -m pycodestyle ${work}/.config/pycodestyle .
 
       # python_lint:
       #   runs-on:
