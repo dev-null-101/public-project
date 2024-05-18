@@ -30,7 +30,7 @@
               pip3 install --upgrade pip 
               pip3 install --upgrade pycodestyle
               pwd
-              ls -lrta .config
+              ls -lrta $work
               
 #python3 -B -m pycodestyle ${pwd}/.config/pycodestyle .
 
