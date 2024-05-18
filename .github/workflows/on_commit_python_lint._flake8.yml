@@ -6,7 +6,8 @@
             branches:
                 - development
             paths:
-                - 'create_project_terraform_dir_structure.py'
+                # - 'create_project_terraform_dir_structure.py'
+                - '**.py'
               
         # allows you to run this workflow manually from the action tab
         workflow_dispatch:
