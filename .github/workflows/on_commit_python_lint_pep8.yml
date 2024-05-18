@@ -2,12 +2,12 @@
 
     name: On Commit Continuous Integration
     
-on:
-    push:
-        branches:
-            - development
-        paths:
-            - '**.py'
+    on:
+        push:
+            branches:
+                - development
+            paths:
+                - '**.py'
     
     workflow_dispatch:
     
@@ -22,9 +22,9 @@ on:
             uses: actions/checkout@v4
     
           - name: Build Docker image
-            run: docker build -t python_lint ./tests
+            run: docker build -t python_vm ./tests
     
-      pylin-lint:
+      python_int:
         runs-on:
           - ubuntu-latest
         needs: container_build
@@ -35,5 +35,5 @@ on:
               docker run
               -v $(pwd):/work
               -w /work
-              naf_vm python3 -B -m pycodestyle --config=/work/.config/pycodestyle /work
+              python_vm python3 -B -m pycodestyle --config=/work/.config/pycodestyle /work
     
